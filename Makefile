@@ -1,8 +1,8 @@
-SOURCE="https://sourceforge.net/projects/qtractor/files/qtractor/0.9.13/qtractor-0.9.13-54.x86_64.AppImage/download"
+SOURCE=""
 DESTINATION="Qtractor.AppImage"
 
 
 all:
 	echo "Building: $(OUTPUT)"
-	wget -O $(DESTINATION) --continue $(SOURCE)
+	wget -O $(DESTINATION) --continue "https://sourceforge.net/projects/qtractor/files/qtractor/0.9.21/qtractor-0.9.21-63.x86_64.AppImage/download"
 	chmod +x $(DESTINATION)
